@@ -1,9 +1,17 @@
 #!/bin/bash
 
-mkdir -p ~/.vim/swap
-mkdir -p ~/.vim/backup
+## config
+
+INSTALL_PATH=~/
+
+
+## config end
+DIR=$(cd $(dirname $0) && pwd)
+
+cp ${DIR}/.vimrc ${INSTALL_PATH}
+cp -r ${DIR}/.vim ${INSTALL_PATH}
 
 ## install bandle
-mkdir -p ~/.vim/bundle
-cd ~/.vim/bundle
-git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+mkdir -p ${INSTALL_PATH}/.vim/bundle
+cd ${INSTALL_PATH}/.vim/bundle
+git clone https://github.com/Shougo/neobundle.vim ${INSTALL_PATH}/.vim/bundle/neobundle.vim
