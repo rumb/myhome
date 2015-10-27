@@ -1,9 +1,7 @@
-export http_proxy=http://proxygate2.nic.nec.co.jp:8080
-export https_proxy=https://proxygate2.nic.nec.co.jp:8080
-
 #----------------------------
 # シェル毎設定
 #----------------------------
+
 case ${OSTYPE} in
   linux* )
     ##########         bash設定          ##########

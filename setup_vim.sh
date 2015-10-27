@@ -1,9 +1,7 @@
 #!/bin/bash
 
 ## config
-
 INSTALL_PATH=~/
-
 ## config end
 
 DIR=$(cd $(dirname $0) && pwd)
